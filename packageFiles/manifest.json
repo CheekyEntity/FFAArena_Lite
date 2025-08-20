@@ -1,0 +1,12 @@
+{
+  "name": "FFAArena_Lite",
+  "author": "CheekyEntity",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/CheekyEntity/FFAArena_Lite",
+  "description": "A lightweight Free‑For‑All (FFA) last‑player‑standing mode for Mage Arena. Simple to use, stable end‑of‑match results, and ModSync‑compatible (all players must have it).",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "hiccup-ModSync-1.0.6",
+    "BepInEx-HarmonyX-2.10.1"
+  ]
+}

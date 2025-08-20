@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>FFAArena_Lite</AssemblyName>
+    <Product>FFA Arena Lite</Product>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>FFAArenaLite</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Use local file references from the existing FFAArena project's References folder to avoid NuGet restore -->
+  <ItemGroup>
+    <Reference Include="References\*.dll" />
+    <!-- Exclude old Harmony 2.0 to avoid conflicts with 0Harmony 2.9 -->
+    <Reference Remove="References\0Harmony20.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*" />
+  </ItemGroup>
+
+  <!-- If needed, you can uncomment explicit references below and set their paths directly. -->
+  <!--
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\path\to\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\path\to\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  -->
+</Project>
