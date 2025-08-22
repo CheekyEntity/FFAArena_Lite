@@ -1,0 +1,656 @@
+[Error  :   BepInEx] Unable to start Unity log writer
+[Message:   BepInEx] BepInEx 5.4.21.0 - MageArena (8/19/2025 12:31:15 PM)
+[Info   :   BepInEx] Running under Unity v2023.2.20.927137
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.21.0]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 3 plugins to load
+[Info   :   BepInEx] Loading [ModSync 1.0.6]
+[Info   :   ModSync] Debug sync messages: False
+[Info   :   ModSync] ModSync plugin loaded!
+[Info   : ModSyncUI] ModSyncUI created successfully
+[Info   :   ModSync] ModSyncUI created
+[Info   :   ModSync] Successfully applied all Harmony patches
+[Info   :   ModSync] Waiting for chat system to initialize...
+[Info   :   ModSync] Lobby detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Warning:   ModSync] Error getting player name: Steamworks is not initialized.
+[Info   :   ModSync] Player join detection initialized
+[Warning:   ModSync] Chat system not ready, will retry later
+[Info   :   BepInEx] Loading [FFA Arena Lite 1.0.3]
+[Info   :FFA Arena Lite] FFA Arena Lite v1.0.3 loading...
+[Info   :FFA Arena Lite] Harmony patches applied.
+[Info   :   BepInEx] Loading [UnityExplorer 4.8.2]
+[Message:UnityExplorer] UnityExplorer 4.8.2 initializing...
+[Message:UnityExplorer] [UniverseLib] UniverseLib 1.4.3 initializing...
+[Message:UnityExplorer] [UniverseLib] Finished UniverseLib initial setup.
+[Message:UnityExplorer] Initialized UnityCrashPrevention for: Canvas.get_renderingDisplaySize
+[Message:   BepInEx] Chainloader startup complete
+[Info   : Unity Log] Local User: CheekyEntity:27
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   : Unity Log] [Dissonance:Network] (20:12:21.307) FishNet: FishNet comms initialized successfully!
+[Info   : Unity Log] [Dissonance:Core] (20:12:22.141) DissonanceComms: Starting Dissonance Voice Comms (9.0.7)
+- Network: [DissonanceSetup (Dissonance.Integrations.FishNet.DissonanceFishNetComms)]
+- Quality Settings: [Quality: Medium, FrameSize: Medium, FEC: True, DenoiseAmount: Moderate, RNN: True (0.47) VoiceDuckLevel: 0.5011872 VAD: MediumSensitivity]
+- Codec: [Codec: Opus, FrameSize: 1920, SampleRate: 48kHz]
+[Message:UnityExplorer] [UniverseLib] Initialized Legacy Input support
+[Message:UnityExplorer] [UniverseLib] Loaded modern bundle for Unity 2023.2.20f1
+[Message:UnityExplorer] [UniverseLib] UniverseLib 1.4.3 initialized.
+[Message:UnityExplorer] Creating UI...
+[Message:UnityExplorer] UnityExplorer 4.8.2 (Mono) initialized.
+[Info   :   ModSync] Chat system initialized successfully on retry 1
+[Info   :   ModSync] Chat system found, starting mod sync process...
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   : Unity Log] FishySteamworks: 1
+[Info   : Unity Log] NetworkManagers: 1
+[Info   : Unity Log] DissonanceComms: 1
+[Info   : Unity Log] DissonanceFishNetComms: 1
+[Info   : Unity Log] Starting lobby creation: k_EResultOK
+[Info   : Unity Log] Set version: 0.7.6 | Confirmed: 0.7.6
+[Info   : Unity Log] 0.7.6
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   : Unity Log] [Dissonance:Network] (20:12:33.734) FishNet: Running as: DedicatedServer!
+[Info   :   ModSync] Lobby created successfully, checking for modded lobby name
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 1 'all' type mods (excluding ModSync)
+[Info   :   ModSync] Modified lobby name to: MODDED: ModSync, FFA Arena Lite
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 1
+[Info   :FFA Arena Lite] OpenLobby: Postfix start
+[Info   :FFA Arena Lite] FFA: cleared selection and destroyed runtime container.
+[Info   :FFA Arena Lite] OpenLobby: detected Host — will inject FFA UI if missing
+[Debug  :FFA Arena Lite] OpenLobby: FFA buttons not found under Mapchoseholder — proceeding to clone
+[Debug  :FFA Arena Lite] OpenLobby: sources found — SmallMap=True LargeMap=True
+[Info   :FFA Arena Lite] OpenLobby: Created FFA_Medium_Button (btn=True)
+[Info   :FFA Arena Lite] OpenLobby: Created FFA_Large_Button (btn=True)
+[Info   :FFA Arena Lite] FFA: positioned buttons. Medium=(-760,260) Large=(-560,260)
+[Info   :FFA Arena Lite] Injected FFA Medium/Large buttons into lobby UI. medPos=(-760.00, 260.00), largePos=(-560.00, 260.00)
+[Info   :FFA Arena Lite] FFA: Created FreeForAllLabel_Auto under mapsizecheck. pos=(-420,160,0) textSet=True
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] [Dissonance:Network] (20:12:33.990) FishNet: Running as: Host!
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.000) DissonanceFishNetServer: Created server with SessionId:492993646
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.001) DissonanceFishNetServer: Connected
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.004) DissonanceFishNetServer: Disconnected
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.006) DissonanceFishNetServer: Created server with SessionId:2033816137
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.006) DissonanceFishNetServer: Connected
+[Info   :   ModSync] Joined new lobby: 109775241493908117
+[Info   :   ModSync] Initializing player tracking. Host: Player
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] [Dissonance:Recording] (20:12:34.160) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] [Dissonance:Network] (20:12:34.181) ConnectionNegotiator`1: Received handshake response from server, joined session '2033816137'
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   : Unity Log] CheekyEntity
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   :   ModSync] Player joined: CheekyEntity
+[Info   :   ModSync] Skipping mod check for host (self): CheekyEntity
+[Info   :FFA Arena Lite] FFA: hid 1 EditTeamFlag object(s) on selection.
+[Info   :FFA Arena Lite] FFA selected. mapinfo=1. Lobby size set to 8.
+[Warning: Unity Log] [Dissonance:Recording] (20:12:40.976) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.1664301)
+[Info   : Unity Log] [Dissonance:Recording] (20:12:41.057) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] Player Joining:
+[Info   : Unity Log] 76561199122345220
+[Info   : Unity Log] TigerProfPlays
+[Info   : Unity Log] Player Joined
+[Warning: Unity Log] [Dissonance:Recording] (20:12:55.797) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.532949)
+[Info   : Unity Log] [Dissonance:Recording] (20:12:55.883) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   : Unity Log] CheekyEntity
+[Info   : Unity Log] TigerProfPlays
+[Info   :   ModSync] Player joined: TigerProfPlays
+[Info   :   ModSync] Lobby lock disabled - allowing TigerProfPlays to join
+[Info   :   ModSync] Received ModSync message: [MODSYNC]CLIENT_MODS:TigerProfPlays:com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Parsed command: CLIENT_MODS, player: TigerProfPlays, data: com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Received client mods from TigerProfPlays: com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Mod sync successful with TigerProfPlays - all required mods match!
+[Info   :FFA Arena Lite] FFA: hid 1 EditTeamFlag object(s) on selection.
+[Info   :FFA Arena Lite] FFA selected. mapinfo=1. Lobby size set to 8.
+[Info   :FFA Arena Lite] FFA: StartGame Postfix hid 2 team join controls in InGameLobby.
+[Warning: Unity Log] [Dissonance:Recording] (20:13:02.206) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.1996625)
+[Info   : Unity Log] [Dissonance:Recording] (20:13:02.291) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] displayinglobbylist
+[Info   :FFA Arena Lite] FFA: StartGameActual Postfix hid 2 team join controls in InGameLobby.
+[Info   :FFA Arena Lite] FFA: Deactivated 8 FlagController and 1 CastleFlagCapturedNotifier objects.
+[Info   :FFA Arena Lite] FFA: ctfoverlay sprite swapped to ffaoverlay.png and reactivated for fade.
+[Warning: Unity Log] [Dissonance:Recording] (20:13:03.906) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.2997423)
+[Info   : Unity Log] [Dissonance:Recording] (20:13:03.988) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in OnStartClient on 'castlehex 3 (1)'.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in OnStartClient on 'castlehex 3'.
+[Warning: Unity Log] Cube is already spawned.
+[Warning: Unity Log] Cube (1) is already spawned.
+[Warning: Unity Log] SoupMan (1) is already spawned.
+[Warning: Unity Log] MagicMirror (1) is already spawned.
+[Warning: Unity Log] Cube is already spawned.
+[Warning: Unity Log] Cube (1) is already spawned.
+[Warning: Unity Log] SoupMan is already spawned.
+[Warning: Unity Log] MagicMirror is already spawned.
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Info   : Unity Log] dungeon
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'crystalhex (1)(Clone)'.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in OnStartClient on 'crystalhex (1)(Clone)'.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'bog(Clone)'.
+[Info   : Unity Log] Found path from (10, 13) to (13, 13) with 4 steps.
+[Info   : Unity Log] Found path from (17, 16) to (13, 13) with 8 steps.
+[Info   : Unity Log] Found path from (11, 7) to (10, 13) with 8 steps.
+[Info   : Unity Log] Found path from (11, 7) to (7, 7) with 5 steps.
+[Info   : Unity Log] Found path from (21, 20) to (17, 16) with 9 steps.
+[Info   : Unity Log] Found path from (6, 18) to (10, 13) with 10 steps.
+[Info   : Unity Log] Found path from (6, 18) to (11, 21) with 9 steps.
+[Info   : Unity Log] Found path from (11, 21) to (13, 13) with 11 steps.
+[Info   : Unity Log] Found path from (11, 21) to (21, 20) with 12 steps.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in OnStartClient on 'bog(Clone)'.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'mushroomgeorge(Clone)'.
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in OnStartClient on 'mushroomgeorge(Clone)'.
+[Warning: Unity Log] [Dissonance:Recording] (20:13:11.949) BasicMicrophoneCapture: Insufficient buffer space, requested 269760, clamped to 16383 (dropping 253377 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:13:11.950) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:13:12.018) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:5.661614)
+[Info   : Unity Log] [Dissonance:Recording] (20:13:12.097) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] 0
+[Info   : Unity Log] 0
+[Info   : Unity Log] 99
+[Info   :FFA Arena Lite] FFA: Disabled CastleFlagCapturedNotifier component.
+[Info   :FFA Arena Lite] EnableMeshRenderersPatch: enabled=0, skipped(flag/pole/banner)=112 under 'castlehex 3'.
+[Info   :FFA Arena Lite] EnableMeshRenderersPatch: enabled=0, skipped(flag/pole/banner)=155 under 'castlehex 3 (1)'.
+[Info   :FFA Arena Lite] Using FFA custom spawns for mapinfo=1.
+[Debug  :FFA Arena Lite] teamSpawns[0/12] type=RespawnWormhole pos=(74.80, 56.01, -39.15), spawnpos=(74.80, 56.01, -39.15)
+[Info   : Unity Log] 1
+[Info   : Unity Log] 0
+[Info   :   ModSync] Game started - stopping monitoring
+[Warning: Unity Log] [Dissonance:Recording] (20:13:23.455) BasicMicrophoneCapture: Insufficient buffer space, requested 395040, clamped to 16383 (dropping 378657 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:13:23.455) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Info   : Unity Log] 0
+[Warning: Unity Log] [Dissonance:Recording] (20:13:23.514) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:8.23758)
+[Info   : Unity Log] [Dissonance:Recording] (20:13:23.597) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   :   ModSync] Game started - stopping player join monitoring
+[Info   :   ModSync] Game started - stopping lobby event monitoring
+[Warning: Unity Log] [Dissonance:Recording] (20:13:24.338) BasicMicrophoneCapture: Insufficient buffer space, requested 33120, clamped to 16383 (dropping 16737 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:13:24.340) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:13:24.360) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.1550328)
+[Info   : Unity Log] [Dissonance:Recording] (20:13:24.441) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] [Dissonance:Recording] (20:13:27.069) BasicMicrophoneCapture: Insufficient buffer space, requested 35040, clamped to 16383 (dropping 18657 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:13:27.070) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.001 (34) (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] missle
+[Warning: Unity Log] Send issue: k_EResultNoConnection
+[Info   : Unity Log] [Dissonance:Network] (20:15:36.618) FishNet: Remote client with ID: 0 has disconnected!
+[Error  : Unity Log] [Dissonance:Network] (20:15:36.697) EventQueue: Exception invoking event handler: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x00008] in <ecf276dcb8654fa5bed2c5ea1a4ad870>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <ecf276dcb8654fa5bed2c5ea1a4ad870>:0 
+  at Dissonance.PlayerTrackerManager.RemovePlayer (Dissonance.VoicePlayerState state) [0x00029] in <b562c5a0ab17439d80de961bfcfb5a3e>:0 
+  at Dissonance.DissonanceComms.Net_PlayerLeft (System.String playerId) [0x00041] in <b562c5a0ab17439d80de961bfcfb5a3e>:0 
+  at Dissonance.Networking.BaseCommsNetwork`5[TServer,TClient,TPeer,TClientParam,TServerParam].OnPlayerLeft (System.String obj) [0x0000a] in <b562c5a0ab17439d80de961bfcfb5a3e>:0 
+  at (wrapper delegate-invoke) System.Action`1[System.String].invoke_void_T(string)
+  at Dissonance.Networking.Client.EventQueue.InvokeEvent[T] (T arg, System.Action`1[T] handler) [0x00003] in <b562c5a0ab17439d80de961bfcfb5a3e>:0 
+[Info   : Unity Log] [Dissonance:Network] (20:15:36.701) DissonanceFishNetClient: Disconnected
+[Warning: Unity Log] [Dissonance:Network] (20:15:36.703) DissonanceFishNetComms: Client update encountered an error - shutting down client
+[Info   : Unity Log] [Dissonance:Network] (20:15:36.704) DissonanceFishNetComms: Attempting to restart client
+[Info   : Unity Log] [Dissonance:Network] (20:15:36.778) ConnectionNegotiator`1: Received handshake response from server, joined session '2033816137'
+[Info   : Unity Log] [Dissonance:Network] (20:15:47.070) FishNet: Stopping as: Host!
+[Info   : Unity Log] [Dissonance:Network] (20:15:47.072) DissonanceFishNetClient: Disconnected
+[Info   : Unity Log] [Dissonance:Network] (20:15:47.073) DissonanceFishNetServer: Disconnected
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3'.
+[Info   : Unity Log] [Dissonance:Network] (20:15:47.883) FishNet: FishNet comms initialized successfully!
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3 (1)'.
+[Info   : Unity Log] [Dissonance:Core] (20:15:47.889) DissonanceComms: Starting Dissonance Voice Comms (9.0.7)
+- Network: [DissonanceSetup (Dissonance.Integrations.FishNet.DissonanceFishNetComms)]
+- Quality Settings: [Quality: Medium, FrameSize: Medium, FEC: True, DenoiseAmount: Moderate, RNN: True (0.47) VoiceDuckLevel: 0.5011872 VAD: MediumSensitivity]
+- Codec: [Codec: Opus, FrameSize: 1920, SampleRate: 48kHz]
+[Info   :   ModSync] Returned to lobby/menu - reinitializing monitoring
+[Info   :   ModSync] Reinitializing components after game...
+[Info   :   ModSync] ModSyncUI already exists
+[Info   :   ModSync] Lobby detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Chat system initialized successfully
+[Info   :   ModSync] Reinitialization complete
+[Info   :   ModSync] UI reinitialization confirmed successful
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Warning: Unity Log] There can be only one active Event System.
+[Info   : Unity Log] gettinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 2
+[Info   :FFA Arena Lite] OpenLobby: Postfix start
+[Info   :FFA Arena Lite] FFA: cleared selection and destroyed runtime container.
+[Debug  :FFA Arena Lite] OpenLobby: detected Client (not host) — will hide FFA UI
+[Info   : Unity Log] displayinglobbylist
+[Info   :   ModSync] Joined new lobby: 109775241494308849
+[Info   :   ModSync] Initializing player tracking. Host: CheekyEntity
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   :   ModSync] StartClientModSync called - isClient: True, isHost: False
+[Info   :   ModSync] Starting client mod sync process...
+[Info   :   ModSync] Found 1 plugins requiring host matching (excluding ModSync)
+[Info   :   ModSync] Starting mod sync for 1 mods
+[Info   :   ModSync] Starting mod sync timeout timer at 232.6788 (timeout: 10s)
+[Info   :   ModSync] SendModListToHostViaChat called with 1 mods
+[Info   :   ModSync] Sending 1 mods to host via chat
+[Info   :   ModSync] Client player name: CheekyEntity
+[Info   :   ModSync] About to send chat message: [MODSYNC]CLIENT_MODS:CheekyEntity:com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Mod list sent to host via chat
+[Info   :   ModSync] ModSyncTimeout coroutine started - waiting for response (timeout: 10s)
+[Info   : Unity Log] [Dissonance:Network] (20:16:31.954) FishNet: Running as: Client!
+[Info   : Unity Log] [Dissonance:Recording] (20:16:32.081) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] [Dissonance:Network] (20:16:32.111) ConnectionNegotiator`1: Received handshake response from server, joined session '1770009938'
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Warning: Unity Log] Cannot complete operation as server when server is not active. You can disable this warning by setting WritePermissions to ClientUnsynchronized.
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   :   ModSync] Sending retry mod list to host (halfway through timeout)
+[Info   :   ModSync] SendModListToHostViaChat called with 1 mods
+[Info   :   ModSync] Sending 1 mods to host via chat
+[Info   :   ModSync] Client player name: CheekyEntity
+[Info   :   ModSync] About to send chat message: [MODSYNC]CLIENT_MODS:CheekyEntity:com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Mod list sent to host via chat
+[Info   :   ModSync] Received ModSync message: [MODSYNC]MODS_MATCH:CheekyEntity:SUCCESS
+[Info   :   ModSync] Parsed command: MODS_MATCH, player: CheekyEntity, data: SUCCESS
+[Info   :   ModSync] Received mods match confirmation for CheekyEntity: SUCCESS
+[Info   :   ModSync] Received success response from host - mod sync complete!
+[Info   :   ModSync] Stopped mod sync timeout coroutine
+[Warning: ModSyncUI] ModSyncUI not initialized, recreating UI...
+[Info   : ModSyncUI] ModSyncUI created successfully
+[Info   : Unity Log] displayinglobbylist
+[Info   :FFA Arena Lite] FFA: StartGameActual Postfix hid 3 team join controls in InGameLobby.
+[Info   :FFA Arena Lite] FFA: Deactivated 8 FlagController and 1 CastleFlagCapturedNotifier objects.
+[Info   :FFA Arena Lite] FFA: ctfoverlay sprite swapped to ffaoverlay.png and reactivated for fade.
+[Warning: Unity Log] [Dissonance:Recording] (20:16:54.075) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.2830431)
+[Info   : Unity Log] [Dissonance:Recording] (20:16:54.153) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] [Dissonance:Recording] (20:17:01.123) BasicMicrophoneCapture: Insufficient buffer space, requested 293280, clamped to 16383 (dropping 276897 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:17:01.125) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:17:01.203) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:6.144411)
+[Info   : Unity Log] [Dissonance:Recording] (20:17:01.283) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] 99
+[Info   : Unity Log] 99
+[Debug  :FFA Arena Lite] teamSpawns[0/18] type=RespawnWormhole pos=(-72.99, 8.75, 121.50), spawnpos=(-72.99, 8.75, 121.50)
+[Info   :   ModSync] Game started - stopping monitoring
+[Info   :   ModSync] Game started - stopping lobby event monitoring
+[Info   :   ModSync] Game started - stopping player join monitoring
+[Warning: Unity Log] [Dissonance:Recording] (20:17:35.400) BasicMicrophoneCapture: Insufficient buffer space, requested 31200, clamped to 16383 (dropping 14817 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:17:35.401) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:17:35.422) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.6327462)
+[Info   : Unity Log] [Dissonance:Recording] (20:17:35.508) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] [Dissonance:Recording] (20:17:36.664) BasicMicrophoneCapture: Insufficient buffer space, requested 31680, clamped to 16383 (dropping 15297 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:17:36.665) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:17:36.704) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.6494082)
+[Info   : Unity Log] [Dissonance:Recording] (20:17:36.782) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] [Dissonance:Recording] (20:17:37.740) BasicMicrophoneCapture: Insufficient buffer space, requested 33600, clamped to 16383 (dropping 17217 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:17:37.741) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:17:37.769) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.6660933)
+[Info   : Unity Log] [Dissonance:Recording] (20:17:37.847) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] spine.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] fireball
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.005 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] castle1 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesBefore=3
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesAfter=2 eliminated=False
+[Debug  :FFA Arena Lite] FFA: MaybeEndMatch proceeding with scene-detected players=2 despite participants=1.
+[Info   : Unity Log] fireball
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] cracked geode (4) (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] missle
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] missle
+[Info   : Unity Log] rockcavwe (UnityEngine.GameObject)
+[Warning: Unity Log] Send issue: k_EResultNoConnection
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   : Unity Log] [Dissonance:Network] (20:22:05.642) FishNet: Stopping as: Client!
+[Info   : Unity Log] [Dissonance:Network] (20:22:05.644) DissonanceFishNetClient: Disconnected
+[Info   : Unity Log] displayinglobbylist
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3'.
+[Info   : Unity Log] [Dissonance:Network] (20:22:19.692) FishNet: FishNet comms initialized successfully!
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3 (1)'.
+[Info   : Unity Log] [Dissonance:Core] (20:22:19.697) DissonanceComms: Starting Dissonance Voice Comms (9.0.7)
+- Network: [DissonanceSetup (Dissonance.Integrations.FishNet.DissonanceFishNetComms)]
+- Quality Settings: [Quality: Medium, FrameSize: Medium, FEC: True, DenoiseAmount: Moderate, RNN: True (0.47) VoiceDuckLevel: 0.5011872 VAD: MediumSensitivity]
+- Codec: [Codec: Opus, FrameSize: 1920, SampleRate: 48kHz]
+[Info   :   ModSync] Returned to lobby/menu - reinitializing monitoring
+[Info   :   ModSync] Reinitializing components after game...
+[Info   :   ModSync] ModSyncUI already exists
+[Info   :   ModSync] Lobby detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Chat system initialized successfully
+[Info   :   ModSync] Reinitialization complete
+[Info   :   ModSync] UI reinitialization confirmed successful
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   : Unity Log] gettinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 1
+[Info   : Unity Log] lobby started
+[Info   :   ModSync] Joined new lobby: 109775241494308849
+[Info   :   ModSync] Initializing player tracking. Host: CheekyEntity
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 0.7.6
+[Info   : Unity Log] 2
+[Info   :FFA Arena Lite] OpenLobby: Postfix start
+[Info   :FFA Arena Lite] FFA: cleared selection and destroyed runtime container.
+[Debug  :FFA Arena Lite] OpenLobby: detected Client (not host) — will hide FFA UI
+[Info   : Unity Log] displayinglobbylist
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)
+[Info   :   ModSync] StartClientModSync called - isClient: True, isHost: False
+[Info   :   ModSync] Starting client mod sync process...
+[Info   :   ModSync] Found 1 plugins requiring host matching (excluding ModSync)
+[Info   :   ModSync] Starting mod sync for 1 mods
+[Info   :   ModSync] Starting mod sync timeout timer at 609.5608 (timeout: 10s)
+[Info   :   ModSync] SendModListToHostViaChat called with 1 mods
+[Info   :   ModSync] Sending 1 mods to host via chat
+[Info   :   ModSync] Client player name: CheekyEntity
+[Info   :   ModSync] About to send chat message: [MODSYNC]CLIENT_MODS:CheekyEntity:com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Mod list sent to host via chat
+[Info   :   ModSync] ModSyncTimeout coroutine started - waiting for response (timeout: 10s)
+[Info   :   ModSync] Joined new lobby: 109775241494629508
+[Info   :   ModSync] Initializing player tracking. Host: CheekyEntity
+[Info   :   ModSync] Host has ModSync: enabled
+[Warning: ModSyncUI] ModSyncUI not initialized, recreating UI...
+[Info   : ModSyncUI] ModSyncUI created successfully
+[Info   : Unity Log] [Dissonance:Network] (20:22:56.818) FishNet: Running as: Client!
+[Info   : Unity Log] [Dissonance:Recording] (20:22:56.956) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Info   : Unity Log] [Dissonance:Network] (20:22:56.967) ConnectionNegotiator`1: Received handshake response from server, joined session '458375546'
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Warning: Unity Log] Cannot complete operation as server when server is not active. You can disable this warning by setting WritePermissions to ClientUnsynchronized.
+[Info   : Unity Log] <color=green>Successfully assigned player tracking</color>
+[Info   :   ModSync] Sending retry mod list to host (halfway through timeout)
+[Info   :   ModSync] SendModListToHostViaChat called with 1 mods
+[Info   :   ModSync] Sending 1 mods to host via chat
+[Info   :   ModSync] Client player name: CheekyEntity
+[Info   :   ModSync] About to send chat message: [MODSYNC]CLIENT_MODS:CheekyEntity:com.cheekyentity.ffaarena.lite:FFA Arena Lite:All
+[Info   :   ModSync] Mod list sent to host via chat
+[Info   :   ModSync] Received ModSync message: [MODSYNC]MODS_MATCH:CheekyEntity:SUCCESS
+[Info   :   ModSync] Parsed command: MODS_MATCH, player: CheekyEntity, data: SUCCESS
+[Info   :   ModSync] Received mods match confirmation for CheekyEntity: SUCCESS
+[Info   :   ModSync] Received success response from host - mod sync complete!
+[Info   :   ModSync] Stopped mod sync timeout coroutine
+[Info   : Unity Log] displayinglobbylist
+[Info   : Unity Log] displayinglobbylist
+[Info   :FFA Arena Lite] FFA: StartGameActual Postfix hid 3 team join controls in InGameLobby.
+[Info   :FFA Arena Lite] FFA: Deactivated 8 FlagController and 1 CastleFlagCapturedNotifier objects.
+[Info   :FFA Arena Lite] FFA: ctfoverlay sprite swapped to ffaoverlay.png and reactivated for fade.
+[Warning: Unity Log] [Dissonance:Recording] (20:23:06.944) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.2663208)
+[Info   : Unity Log] [Dissonance:Recording] (20:23:07.023) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] [Dissonance:Recording] (20:23:14.199) BasicMicrophoneCapture: Insufficient buffer space, requested 294240, clamped to 16383 (dropping 277857 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:23:14.201) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:23:14.292) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:6.19415)
+[Info   : Unity Log] [Dissonance:Recording] (20:23:14.370) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] Failed to create agent because it is not close enough to the NavMesh
+[Warning: Unity Log] Failed to create agent because it is not close enough to the NavMesh
+[Warning: Unity Log] Failed to create agent because it is not close enough to the NavMesh
+[Warning: Unity Log] Failed to create agent because it is not close enough to the NavMesh
+[Info   : Unity Log] Found path from (13, 6) to (13, 13) with 8 steps.
+[Info   : Unity Log] Found path from (13, 13) to (15, 16) with 6 steps.
+[Info   : Unity Log] Found path from (15, 16) to (19, 21) with 10 steps.
+[Info   : Unity Log] Found path from (9, 20) to (15, 16) with 13 steps.
+[Info   : Unity Log] Found path from (6, 10) to (13, 13) with 11 steps.
+[Info   : Unity Log] 99
+[Info   : Unity Log] 99
+[Debug  :FFA Arena Lite] teamSpawns[0/17] type=RespawnWormhole pos=(-62.53, 90.33, 142.12), spawnpos=(-62.53, 90.33, 142.12)
+[Info   :   ModSync] Game started - stopping monitoring
+[Info   :   ModSync] Game started - stopping lobby event monitoring
+[Info   :   ModSync] Game started - stopping player join monitoring
+[Warning: Unity Log] [Dissonance:Recording] (20:23:47.167) BasicMicrophoneCapture: Insufficient buffer space, requested 33120, clamped to 16383 (dropping 16737 samples)
+[Warning: Unity Log] [Dissonance:Recording] (20:23:47.168) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (20:23:47.195) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0.6826536)
+[Info   : Unity Log] [Dissonance:Recording] (20:23:47.280) BasicMicrophoneCapture: Began mic capture (SampleRate:48000Hz, FrameSize:960, Buffer Limit:2^13, Latency:20ms, Device:'')
+[Warning: Unity Log] Failed to create agent because it is not close enough to the NavMesh
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] GameObject (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] GameObject (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesBefore=3
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesAfter=2 eliminated=False
+[Debug  :FFA Arena Lite] FFA: MaybeEndMatch proceeding with scene-detected players=2 despite participants=1.
+[Info   : Unity Log] fire
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] GameObject (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesBefore=2
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesAfter=1 eliminated=False
+[Debug  :FFA Arena Lite] FFA: MaybeEndMatch proceeding with scene-detected players=2 despite participants=1.
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] fire
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] castle1 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] castle1 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.005 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] wormhole(Clone) (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] tree20 (8) (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] bogged (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] castle1 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Plane.003 (UnityEngine.GameObject)
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesBefore=1
+[Debug  :FFA Arena Lite] Death[Server]: CheekyEntity team=2 livesAfter=0 eliminated=True
+[Debug  :FFA Arena Lite] FFA: MaybeEndMatch proceeding with scene-detected players=2 despite participants=1.
+[Info   :FFA Arena Lite] FFA: End condition met. participants=1 remaining=1. Attempting base end game...
+[Warning:FFA Arena Lite] FFA: TriggerBaseEndGame skipped — not server side.
+[Warning:FFA Arena Lite] FFA: Base end game trigger failed; showing fallback winner overlay.
+[Info   :FFA Arena Lite] FFA: Fallback winner message shown via summonDeathMessage: TigerProfPlays
+[Info   : Unity Log] fireball
+[Info   :FFA Arena Lite] FFA: Blocking RespawnPlayer for eliminated player.
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] Look rotation viewing vector is zero
+[Info   : Unity Log] [Dissonance:Network] (20:29:41.911) FishNet: Stopping as: Client!
+[Info   : Unity Log] [Dissonance:Network] (20:29:41.912) DissonanceFishNetClient: Disconnected
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Warning: Unity Log] Failed to create agent because there is no valid NavMesh
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3'.
+[Info   : Unity Log] [Dissonance:Network] (20:29:42.789) FishNet: FishNet comms initialized successfully!
+[Info   :FFA Arena Lite] FFA: Neutralized FlagController in Awake on 'castlehex 3 (1)'.
+[Info   : Unity Log] [Dissonance:Core] (20:29:42.794) DissonanceComms: Starting Dissonance Voice Comms (9.0.7)
+- Network: [DissonanceSetup (Dissonance.Integrations.FishNet.DissonanceFishNetComms)]
+- Quality Settings: [Quality: Medium, FrameSize: Medium, FEC: True, DenoiseAmount: Moderate, RNN: True (0.47) VoiceDuckLevel: 0.5011872 VAD: MediumSensitivity]
+- Codec: [Codec: Opus, FrameSize: 1920, SampleRate: 48kHz]
+[Info   :   ModSync] Returned to lobby/menu - reinitializing monitoring
+[Info   :   ModSync] Reinitializing components after game...
+[Info   :   ModSync] ModSyncUI already exists
+[Info   :   ModSync] Lobby detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Player join detection initialized
+[Info   :   ModSync] Chat system initialized successfully
+[Info   :   ModSync] Reinitialization complete
+[Info   : Unity Log] displayinglobbylist
+[Info   :   ModSync] UI reinitialization confirmed successful
+[Info   :   ModSync] Host has ModSync: enabled
+[Warning: ModSyncUI] ModSyncUI not initialized, recreating UI...
+[Info   : ModSyncUI] ModSyncUI created successfully
+[Info   :   ModSync] Joined new lobby: 109775241494629508
+[Info   :   ModSync] Initializing player tracking. Host: CheekyEntity
+[Info   :   ModSync] Starting mod synchronization check...
+[Info   :   ModSync] Found modsync field in ModSync: all
+[Info   :   ModSync] Found modsync field in FFA Arena Lite: all
+[Info   :   ModSync] Found 3 loaded plugins
+[Info   :   ModSync] Found 2 plugins with modsync variable
+[Info   :   ModSync] Found 2 plugins with 'all' sync type
+[Info   :   ModSync] Plugin: ModSync (com.magearena.modsync) - SyncType: All
+[Info   :   ModSync] Plugin: FFA Arena Lite (com.cheekyentity.ffaarena.lite) - SyncType: All
+[Info   :   ModSync] Plugin: UnityExplorer (com.sinai.unityexplorer) - No modsync variable (excluded from matching)

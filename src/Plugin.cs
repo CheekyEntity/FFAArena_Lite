@@ -11,9 +11,9 @@ namespace FFAArenaLite
     [BepInDependency("com.magearena.modsync", BepInDependency.DependencyFlags.HardDependency)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string PluginGuid = "cheekyentity.ffaarena.lite";
+        public const string PluginGuid = "com.cheekyentity.ffaarena.lite";
         public const string PluginName = "FFA Arena Lite";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.4";
 
         // This mod requires both client and host to have it (ModSync)
         public static string modsync = "all";

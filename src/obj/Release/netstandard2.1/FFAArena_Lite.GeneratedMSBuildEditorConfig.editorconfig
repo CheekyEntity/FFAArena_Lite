@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = FFAArenaLite
-build_property.ProjectDir = C:\Users\elias\Desktop\Projects\CheekyEntity_Chronomancers_Paradox\FFAArena_Lite\src\
+build_property.ProjectDir = C:\Users\elias\Desktop\Projects\MageArena_Mods\FFAArena_Lite\src\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

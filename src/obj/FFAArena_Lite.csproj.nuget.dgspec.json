@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\FFAArena_Lite.csproj": {}
+    "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\FFAArena_Lite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\FFAArena_Lite.csproj": {
+    "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\FFAArena_Lite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\FFAArena_Lite.csproj",
+        "projectUniqueName": "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\FFAArena_Lite.csproj",
         "projectName": "FFAArena_Lite",
-        "projectPath": "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\FFAArena_Lite.csproj",
+        "projectPath": "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\FFAArena_Lite.csproj",
         "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\obj\\",
+        "outputPath": "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\elias\\Desktop\\Projects\\CheekyEntity_Chronomancers_Paradox\\FFAArena_Lite\\src\\NuGet.Config",
+          "C:\\Users\\elias\\Desktop\\Projects\\MageArena_Mods\\FFAArena_Lite\\src\\NuGet.Config",
           "C:\\Users\\elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

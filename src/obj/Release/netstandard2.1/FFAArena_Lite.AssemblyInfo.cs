@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FFAArena_Lite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88eee74c23ce3135eb65f6847908ec4a40aaa461")]
 [assembly: System.Reflection.AssemblyProductAttribute("FFA Arena Lite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FFAArena_Lite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

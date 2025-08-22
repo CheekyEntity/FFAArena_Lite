@@ -255,31 +255,13 @@ namespace FFAArenaLite.Patches
             try
             {
                 if (!FFAMode.IsActive()) return true;
-                // Only the server decides to skip respawn routines. Clients must run their routines to restore local state.
-                try
-                {
-                    var isServerProp = AccessTools.Property(__instance.GetType(), "IsServerInitialized");
-                    if (isServerProp != null)
-                    {
-                        var val = isServerProp.GetValue(__instance, null);
-                        if (!(val is bool b) || !b) return true;
-                    }
-                    else
-                    {
-                        var isServerField = AccessTools.Field(__instance.GetType(), "IsServerInitialized");
-                        if (isServerField != null)
-                        {
-                            var val2 = isServerField.GetValue(__instance);
-                            if (!(val2 is bool b2) || !b2) return true;
-                        }
-                    }
-                }
-                catch { }
                 var f = AccessTools.Field(__instance.GetType(), "pmv");
                 var pmv = f?.GetValue(__instance) as Component; // PlayerMovement
                 if (pmv == null) return true;
                 var go = pmv.gameObject;
-                if (FFALastStand.IsEliminated(go))
+                // If match has ended or this player is eliminated, skip respawn coroutine on both server and clients
+                // to avoid getting stuck in midair or restoring control incorrectly.
+                if (FFALastStand.IsEnded() || FFALastStand.IsEliminated(go))
                 {
                     // skip the respawn routine entirely but return a non-null IEnumerator
                     __result = SkipEnumerator();
@@ -319,31 +301,11 @@ namespace FFAArenaLite.Patches
             try
             {
                 if (!FFAMode.IsActive()) return true;
-                // Only the server decides to skip respawn routines. Clients must run their routines to restore local state.
-                try
-                {
-                    var isServerProp = AccessTools.Property(__instance.GetType(), "IsServerInitialized");
-                    if (isServerProp != null)
-                    {
-                        var val = isServerProp.GetValue(__instance, null);
-                        if (!(val is bool b) || !b) return true;
-                    }
-                    else
-                    {
-                        var isServerField = AccessTools.Field(__instance.GetType(), "IsServerInitialized");
-                        if (isServerField != null)
-                        {
-                            var val2 = isServerField.GetValue(__instance);
-                            if (!(val2 is bool b2) || !b2) return true;
-                        }
-                    }
-                }
-                catch { }
                 var f = AccessTools.Field(__instance.GetType(), "pmv");
                 var pmv = f?.GetValue(__instance) as Component; // PlayerMovement
                 if (pmv == null) return true;
                 var go = pmv.gameObject;
-                if (FFALastStand.IsEliminated(go))
+                if (FFALastStand.IsEnded() || FFALastStand.IsEliminated(go))
                 {
                     __result = SkipEnumerator();
                     return false;

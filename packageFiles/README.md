@@ -21,7 +21,6 @@ A simple, lightweight Free‑For‑All (FFA) mode for Mage Arena. Install it, pl
 
 ## Requirements
 * BepInEx 5 (BepInExPack)
-* HarmonyX
 * ModSync (required – this mod uses ModSync "all", so everyone must have it)
 
 Installing with Thunderstore Mod Manager (or r2modman) will automatically install these for you.
@@ -36,7 +35,7 @@ Installing with Thunderstore Mod Manager (or r2modman) will automatically instal
 1. Install BepInExPack for Mage Arena.
 2. Download FFA Arena Lite from Thunderstore.
 3. Extract into your game folder, keeping the BepInEx folder structure (place the DLL under `BepInEx/plugins/FFAArena_Lite/`).
-4. Make sure ModSync and HarmonyX are also installed.
+4. Make sure ModSync is also installed.
 
 ## Configuration
 * Initial lives per player can be set in BepInEx config (section "FFA"). Default is tuned for last‑player‑standing.
@@ -50,5 +49,6 @@ Installing with Thunderstore Mod Manager (or r2modman) will automatically instal
 
 ## Support
 * Questions or issues: GitHub (see manifest) or Thunderstore comments.
+* Discord: cheekyentity
 
 Have fun!

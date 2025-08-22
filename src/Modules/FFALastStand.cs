@@ -115,7 +115,25 @@ namespace FFAArenaLite.Modules
         {
             if (_ended) return;
             // Require at least two participants before ending logic engages to avoid single-player freeze.
-            if (_participants.Count < 2) return;
+            if (_participants.Count < 2)
+            {
+                // Fallback: detect actual players in scene
+                int playersDetected = 0;
+                try
+                {
+                    var all = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
+                    foreach (var mb in all)
+                    {
+                        if (mb != null && mb.GetType().Name == "PlayerMovement") playersDetected++;
+                    }
+                }
+                catch { }
+                if (playersDetected < 2)
+                {
+                    return;
+                }
+                try { FFAArenaLite.Plugin.Log?.LogDebug($"FFA: MaybeEndMatch proceeding with scene-detected players={playersDetected} despite participants={_participants.Count}."); } catch { }
+            }
             int remaining = CountRemaining();
             if (remaining <= 1)
             {
@@ -123,8 +141,10 @@ namespace FFAArenaLite.Modules
                 FreezeAllPlayers();
                 // Try to use base game's end screen + stats via PlayerRespawnManager.
                 // If this fails (no manager found), fall back to local overlay.
+                try { FFAArenaLite.Plugin.Log?.LogInfo($"FFA: End condition met. participants={_participants.Count} remaining={remaining}. Attempting base end game..."); } catch { }
                 if (!TriggerBaseEndGame())
                 {
+                    try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: Base end game trigger failed; showing fallback winner overlay."); } catch { }
                     ShowWinOverlay();
                 }
             }
@@ -139,7 +159,11 @@ namespace FFAArenaLite.Modules
             try
             {
                 var winner = FindWinner();
-                if (winner == null) return false;
+                if (winner == null)
+                {
+                    try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame aborted — no single winner found."); } catch { }
+                    return false;
+                }
 
                 // Find PlayerRespawnManager and ensure we're on the server before mutating teams or ending the game
                 object prm = null;
@@ -147,21 +171,33 @@ namespace FFAArenaLite.Modules
                 try
                 {
                     prmType = AccessTools.TypeByName("PlayerRespawnManager");
-                    if (prmType == null) return false;
+                    if (prmType == null)
+                    {
+                        try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame failed — PlayerRespawnManager type not found."); } catch { }
+                        return false;
+                    }
                     var findMethod = AccessTools.Method(typeof(UnityEngine.Object), "FindObjectOfType", new Type[] { typeof(Type) });
                     prm = findMethod?.Invoke(null, new object[] { prmType });
                 }
                 catch { }
-                if (prm == null) return false;
+                if (prm == null)
+                {
+                    try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame failed — PlayerRespawnManager instance not found."); } catch { }
+                    return false;
+                }
 
                 // Check IsServerInitialized to ensure only host performs team reassignment and triggers end game
                 try
                 {
                     var isServerProp = AccessTools.Property(prm.GetType(), "IsServerInitialized");
                     var isServer = (bool?)(isServerProp?.GetValue(prm)) ?? false;
-                    if (!isServer) return false;
+                    if (!isServer)
+                    {
+                        try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame skipped — not server side."); } catch { }
+                        return false;
+                    }
                 }
-                catch { return false; }
+                catch { try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame failed — IsServerInitialized check errored."); } catch { } return false; }
 
                 // Reassign teams to map FFA win -> base game's team-based victory UI.
                 try
@@ -174,10 +210,12 @@ namespace FFAArenaLite.Modules
                         var f = AccessTools.Field(mb.GetType(), "playerTeam");
                         if (f != null && f.FieldType == typeof(int))
                         {
-                            int team = (mb.gameObject == winner) ? 1 : 0;
+                            // Winner must be on team 0 because we call ServerEndGame(0)
+                            int team = (mb.gameObject == winner) ? 0 : 1;
                             f.SetValue(mb, team);
                         }
                     }
+                    try { FFAArenaLite.Plugin.Log?.LogInfo("FFA: Reassigned teams for base end game (winner=team 0, others=team 1). Calling ServerEndGame(0)"); } catch { }
                 }
                 catch { }
 
@@ -185,8 +223,13 @@ namespace FFAArenaLite.Modules
                 try
                 {
                     var serverEnd = AccessTools.Method(prm.GetType(), "ServerEndGame", new Type[] { typeof(int) });
-                    if (serverEnd == null) return false;
+                    if (serverEnd == null)
+                    {
+                        try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: TriggerBaseEndGame failed — ServerEndGame(int) not found."); } catch { }
+                        return false;
+                    }
                     serverEnd.Invoke(prm, new object[] { 0 }); // 0 = losing team, so winner (team 1) gets victory
+                    try { FFAArenaLite.Plugin.Log?.LogInfo("FFA: Invoked PlayerRespawnManager.ServerEndGame(0)."); } catch { }
                     return true;
                 }
                 catch { }
@@ -247,7 +290,7 @@ namespace FFAArenaLite.Modules
                 // Reuse existing death message system if available for a simple broadcast.
                 try
                 {
-                    var prmType = Type.GetType("PlayerRespawnManager");
+                    var prmType = AccessTools.TypeByName("PlayerRespawnManager");
                     if (prmType != null)
                     {
                         // Find any instance of PlayerRespawnManager safely using non-generic API
@@ -262,8 +305,11 @@ namespace FFAArenaLite.Modules
                         {
                             var m = AccessTools.Method(prm.GetType(), "summonDeathMessage");
                             m?.Invoke(prm, new object[] { name, "winner", "" });
+                            try { FFAArenaLite.Plugin.Log?.LogInfo($"FFA: Fallback winner message shown via summonDeathMessage: {name}"); } catch { }
                         }
+                        else { try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: ShowWinOverlay — PlayerRespawnManager instance not found."); } catch { } }
                     }
+                    else { try { FFAArenaLite.Plugin.Log?.LogWarning("FFA: ShowWinOverlay — PlayerRespawnManager type not found."); } catch { } }
                 }
                 catch { }
                 // TODO: Optional: spawn a simple Canvas overlay for FFA victory, if desired.
